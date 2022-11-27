@@ -1,0 +1,50 @@
+/* ------------------------------ */
+/* ======== Order service= =======*/
+/* ------------------------------ */
+
+.order {
+    /* margin-top: 80px;  For fixed header*/
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+.order__overlay {
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order-img.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.order__overlay-indent-right-left {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order__title {
+    width: 696px;
+
+    color: var(--thirdy-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.order__title-indent {
+    margin-top: 0;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-right: auto;
+}
+
+.order-button {
+    padding: 10px 32px;
+    min-width: 216px;
+}

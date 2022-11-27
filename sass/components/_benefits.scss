@@ -1,0 +1,46 @@
+/* ------------------------------ */
+/* ========== Our Benefits =======*/
+/* ------------------------------ */
+
+.benefits__list {
+    display: flex;
+}
+
+.benefits__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefits__icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px 100px;
+    background-color: #f5f4fa;
+}
+
+.benefits__icon-box-indet-bottom {
+    margin-bottom: 30px;
+}
+
+.benefits__icon {
+    fill: currentColor;
+    color: #2196f3;
+}
+
+.benefits__subtitle {
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.benefits__subtitle-indet-bottom {
+    margin-bottom: 10px;
+}
+
+.benefits__text {
+    line-height: 1.71;
+    color: var(--secondary-color);
+}

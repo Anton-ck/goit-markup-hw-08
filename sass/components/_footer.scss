@@ -1,0 +1,31 @@
+/* ------------------------------ */
+/* ============ Footer ===========*/
+/* ------------------------------ */
+
+.footer {
+    background-color: var(--gray);
+    padding: 60px 0;
+}
+
+.footer-title-box {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    color: var(--thirdy-color);
+
+    text-transform: uppercase;
+}
+
+.footer-title-box__indent-bottom {
+    margin-bottom: 20px;
+}
+
+.footer__box-main {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__box-contacts {
+    margin-right: 70px;
+}

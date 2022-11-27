@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="uk">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+   rel="stylesheet"
+  />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+  />
+  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/index.min.css" />
+
+ </head>
+ <body>
+  <header class="header header--border">
+   <nav class="header-nav container">
+    <a class="logo header-logo__indent-right" href="./index.html"> <span class="logo--color">Web</span>Studio</a>
+    <ul class="header-nav__list">
+     <li class="header-nav__item">
+      <a class="header-nav__link" href="./index.html">Студія</a>
+     </li>
+     <li class="header-nav__item">
+      <a class="header-nav__link header-nav__link--is-active" href="./portfolio.html">Портфоліо</a>
+     </li>
+     <li class="header-nav__item">
+      <a class="header-nav__link" href="">Контакти</a>
+     </li>
+    </ul>
+
+    <ul class="header-contacts header-contacts__indent-left">
+     <li class="header-contacts__list">
+      <a class="header-contacts__link" href="mailto:info@devstudio.com">
+       <svg class="header-contacts__icon header-contacts__icon-indent-right" width="16" height="12">
+        <use href="./images/spirite.svg#icon-envelope"></use>
+       </svg>
+       info@devstudio.com</a
+      >
+     </li>
+     <li class="header-contacts__list">
+      <a class="header-contacts__link" href="tel:+380961111111">
+       <svg class="header-contacts__icon header-contacts__icon-indent-right" width="10" height="16">
+        <use href="./images/spirite.svg#icon-smartphone"></use>
+       </svg>
+       +38 096 111 11 11</a
+      >
+     </li>
+    </ul>
+   </nav>
+  </header>
+
+  <main class="main">
+   <section class="portfolio section">
+    <div class="container">
+     <h1 class="portfolio__title hidden">Web Portfolio</h1>
+
+     <ul class="select-buttons">
+      <li class="select-buttons__item">
+       <button class="select-buttons__btn" type="button">Усе</button>
+      </li>
+      <li class="select-buttons__item">
+       <button class="select-buttons__btn" type="button">Веб-сайти</button>
+      </li>
+      <li class="select-buttons__item">
+       <button class="select-buttons__btn" type="button">Додатки</button>
+      </li>
+      <li class="select-buttons__item">
+       <button class="select-buttons__btn" type="button">Дизайн</button>
+      </li>
+      <li class="select-buttons__item">
+       <button class="select-buttons__btn" type="button">Маркетинг</button>
+      </li>
+     </ul>
+
+     <ul class="product">
+      <li class="product__item">
+       <a class="product__link" href="">
+        <div class="product__thumb">
+         <img src="./images/pf-1.jpg" alt="Технокряк" width="370" />
+         <div class="product__overlay">
+          <p class="product__label">
+           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
+           отримати вичерпні відомості про компанію чи приватну особу.
+          </p>
+         </div>
+        </div>
+
+        <div class="product__meta">
+         <h2 class="product__title">Технокряк</h2>
+         <p class="product__text">Веб-сайт</p>
+        </div>
+       </a>
+      </li>
+
+      <li class="product__item">
+       <a class="product__link" href="">
+        <div class="product__thumb">
+         <img src="./images/pf-2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+         <div class="product__overlay">
+          <p class="product__label">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
+           consectetur est culpa adipisci?
+          </p>
+         </div>
+        </div>
+
+        <div class="product__meta">
+         <h2 class="product__title">Постер New Orlean vs Golden Star</h2>
+         <p class="product__text">Веб-сайт</p>
+        </div>
+       </a>
+      </li>
+
+      <li class="product__item">
+       <a class="product__link" href="">
+        <div class="product__thumb">
+         <img src="./images/pf-3.jpg" alt="Ресторан Seafood" width="370" />
+         <div class="product__overlay">
+          <p class="product__label">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
+           consectetur est culpa adipisci?
+          </p>
+         </div>
+        </div>
+
+        <div class="product__meta">
+         <h2 class="product__title">Ресторан Seafood</h2>
+         <p class="product__text">Додаток</p>
+        </div>
+       </a>
+      </li>
+
+      <li class="product__item">
+       <a class="product__link" href="">
+        <div class="product__thumb">
+         <img src="./images/pf-4.jpg" alt="Проєкт Prime" width="370" />
+         <div class="product__overlay">
+          <p class="product__label">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
+           consectetur est culpa adipisci?
+          </p>
+         </div>
+        </div>
+
+        <div class="product__meta">
+         <h2 class="product__title">Проєкт Prime</h2>
+         <p class="product__text">Маркетинг</p>
+        </div>
+       </a>
+      </li>
+
+      <li class="product__item">
+       <a class="product__link" href="">
+        <div class="product__thumb">
+         <img src="./images/pf-5.jpg" alt="Проєкт Boxes" width="370" />
+         <div class="product__overlay">
+          <p class="product__label">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
+           consectetur est culpa adipisci?
+          </p>
+         </div>
+        </div>
+
+        <div class="product__meta">
+         <h2 class="product__title">Проєкт Boxes</h2>
+         <p class="product__text">Додаток</p>
+        </div>
+       </a>
+      </li>
+
+      <li class="product__item">
+       <a class="product__link" href="">
+        <div class="product__thumb">
+         <img src="./images/pf-6.jpg" alt="Inspiration has no Borders" width="370" />
+         <div class="product__overlay">
+          <p class="product__label">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
+           consectetur est culpa adipisci?
+          </p>
+         </div>
+        </div>
+
+        <div class="product__meta">
+         <h2 class="product__title">Inspiration has no Borders</h2>
+         <p class="product__text">Веб-сайт</p>
+        </div>
+       </a>
+      </li>
+
+      <li class="product__item">
+       <a class="product__link" href="">
+        <div class="product__thumb">
+         <img src="./images/pf-7.jpg" alt="Видання Limited Edition" width="370" />
+         <div class="product__overlay">
+          <p class="product__label">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
+           consectetur est culpa adipisci?
+          </p>
+         </div>
+        </div>
+
+        <div class="product__meta">
+         <h2 class="product__title">Видання Limited Edition</h2>
+         <p class="product__text">Дизайн</p>
+        </div>
+       </a>
+      </li>
+
+      <li class="product__item">
+       <a class="product__link" href="">
+        <div class="product__thumb">
+         <img src="./images/pf-8.jpg" alt="проєкт LAB" width="370" />
+         <div class="product__overlay">
+          <p class="product__label">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
+           consectetur est culpa adipisci?
+          </p>
+         </div>
+        </div>
+
+        <div class="product__meta">
+         <h2 class="product__title">Проєкт LAB</h2>
+         <p class="product__text">Маркетинг</p>
+        </div>
+       </a>
+      </li>
+
+      <li class="product__item">
+       <a class="product__link" href="">
+        <div class="product__thumb">
+         <img src="./images/pf-9.jpg" alt="Growing Business" width="370" />
+         <div class="product__overlay">
+          <p class="product__label">
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
+           consectetur est culpa adipisci?
+          </p>
+         </div>
+        </div>
+
+        <div class="product__meta">
+         <h2 class="product__title">Growing Business</h2>
+         <p class="product__text">Додаток</p>
+        </div>
+       </a>
+      </li>
+     </ul>
+    </div>
+   </section>
+  </main>
+
+  <footer class="footer">
+   <div class="footer__box-main container">
+    <div class="footer__box-contacts">
+     <a class="logo logo--footer-color" href="./index.html"> <span class="logo--color">Web</span>Studio</a>
+     <address class="address address__indent-top">
+      <ul class="address__contacts">
+       <li class="address__list">
+        <a
+         class="address__map"
+         href="https://goo.gl/maps/aHd2ftM9WsuAnUvCA"
+         target="_blank"
+         rel="nofollow noreferrer noopener"
+         >м. Київ, пр-т Лесі Українки, 26</a
+        >
+       </li>
+       <li class="address__list">
+        <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+       </li>
+       <li class="address__list">
+        <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+       </li>
+      </ul>
+     </address>
+    </div>
+
+    <div class="social-box">
+     <p class="footer-title-box footer-title-box__indent-bottom">приєднуйтесь</p>
+     <ul class="social__list">
+      <li class="social__item">
+       <a class="social__link" href="#">
+        <svg class="social__logo" width="20" height="20">
+         <use href="./images/spirite.svg#icon-instagram"></use>
+        </svg>
+       </a>
+      </li>
+
+      <li class="social__item">
+       <a class="social__link" href="#">
+        <svg class="social__logo" width="20" height="20">
+         <use href="./images/spirite.svg#icon-twitter"></use>
+        </svg>
+       </a>
+      </li>
+      <li class="social__item">
+       <a class="social__link" href="#">
+        <svg class="social__logo" width="20" height="20">
+         <use href="./images/spirite.svg#icon-facebook"></use>
+        </svg>
+       </a>
+      </li>
+      <li class="social__item">
+       <a class="social__link" href="#">
+        <svg class="social__logo" width="20" height="20">
+         <use href="./images/spirite.svg#icon-linkedin"></use>
+        </svg>
+       </a>
+      </li>
+     </ul>
+    </div>
+
+    <div class="subscrib-box">
+     <p class="footer-title-box footer-title-box__indent-bottom">Підпишіться на розсилку</p>
+     <form class="subscrib-form">
+      <input class="subscrib-form__email" autocomplete="email" type="email" id="email" placeholder=" " />
+      <label class="subscrib-form__label" for="email">E-mail</label>
+
+      <button class="main-button subscrib-form__button" type="submit">
+       Підписатися
+
+       <svg class="subscrib-form__icon" width="24" height="24">
+        <use href="./images/spirite.svg#icon-send"></use>
+       </svg>
+      </button>
+     </form>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,56 @@
+/* ------------------------------ */
+/* ========== Our Team ===========*/
+/* ------------------------------ */
+
+.team {
+    background-color: #f5f4fa;
+}
+
+.team__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.team__list {
+    display: flex;
+    gap: 30px;
+}
+
+.team__member {
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    background-color: var(--thirdy-color);
+}
+
+/* .team__member:not(:last-child) {
+ margin-right: 30px;
+} */
+
+.team__meta {
+    padding: 30px 0;
+}
+
+.team__name {
+    font-weight: 500;
+    font-size: var(--secondary-font-size);
+    line-height: 1.19;
+}
+
+.team__name-indent-bottom {
+    margin-bottom: 10px;
+}
+
+.team__profession {
+    font-size: var(--secondary-font-size);
+    line-height: 1.19;
+    color: var(--secondary-color);
+}
+
+.team__profession-indent-bottom {
+    margin-bottom: 16px;
+}

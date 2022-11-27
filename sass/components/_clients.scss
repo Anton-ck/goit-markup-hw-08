@@ -1,0 +1,33 @@
+/* ------------------------------ */
+/* ======== Our clients  =========*/
+/* ------------------------------ */
+
+.clients__list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    color: #afb1b8;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .clients__item:not(:last-child) {
+ margin-right: 30px;
+} */
+
+.clients__logo {
+    fill: currentColor;
+}
+
+.clients__link:focus,
+.clients__link:hover {
+    color: #2196f3;
+}
