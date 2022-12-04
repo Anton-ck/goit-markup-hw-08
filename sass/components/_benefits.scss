@@ -2,13 +2,41 @@
 /* ========== Our Benefits =======*/
 /* ------------------------------ */
 
-.benefits__list {
-    display: flex;
+.benefits {
+        // padding-bottom: 0px;
 }
 
-.benefits__item:not(:last-child) {
-    margin-right: 30px;
+.benefits__list {
+    display: block;
+
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+ 
+                @media screen and (min-width: 1199px) {
+                    flex-wrap: nowrap;
+                }
 }
+
+.benefits__item {
+    @media screen and (min-width: 768px)  {
+        flex-basis: calc((100% - 60px) / 2);
+    }
+
+}
+
+
+// .benefits__item:not(:last-child) {
+//     margin-right: 30px;
+// }
+
+.benefits__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
 
 .benefits__icon-box {
     display: flex;
@@ -17,6 +45,9 @@
 
     padding: 25px 100px;
     background-color: #f5f4fa;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+            padding: 25px 142px;
+        }
 }
 
 .benefits__icon-box-indet-bottom {
@@ -24,11 +55,17 @@
 }
 
 .benefits__icon {
+    display: block;
     fill: currentColor;
     color: #2196f3;
 }
 
 .benefits__subtitle {
+
+    @media screen and (max-width: 767px) {
+    text-align: center;
+    }
+    
     font-size: 14px;
     font-weight: 700;
 

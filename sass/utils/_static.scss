@@ -6,11 +6,28 @@ body {
     font-size: var(--primary-font-size);
 }
 
+
+
 .container {
-    width: 1200px;
+    
+    // width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+
+@media screen and (min-width: 480px) {
+
+width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+width: 768px;
+}
+
+@media screen and (min-width: 1200px) {
+
+width: 1200px;
+}
 }
 
 .primary-indent {
@@ -20,14 +37,24 @@ body {
 
 
 .section {
-    padding: 94px 0px;
+    padding: 60px 0px;
+
+@media screen and (min-width: 1199px) {
+    padding: 94px 0px;        
+}
 }
 
 .section-title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+        text-align: center;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+ 
+ 
+@media screen and (min-width: 1199px) {
+        font-size: 36px;
+        line-height: 1.17;
+ }
 }
 
 .section-title__indent-bottom {
