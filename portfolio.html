@@ -23,36 +23,54 @@
   <header class="header header--border">
    <nav class="header-nav container">
     <a class="logo header-logo__indent-right" href="./index.html"> <span class="logo--color">Web</span>Studio</a>
-    <ul class="header-nav__list">
-     <li class="header-nav__item">
-      <a class="header-nav__link" href="./index.html">Студія</a>
-     </li>
-     <li class="header-nav__item">
-      <a class="header-nav__link header-nav__link--is-active" href="./portfolio.html">Портфоліо</a>
-     </li>
-     <li class="header-nav__item">
-      <a class="header-nav__link" href="">Контакти</a>
-     </li>
-    </ul>
 
-    <ul class="header-contacts header-contacts__indent-left">
-     <li class="header-contacts__list">
-      <a class="header-contacts__link" href="mailto:info@devstudio.com">
-       <svg class="header-contacts__icon header-contacts__icon-indent-right" width="16" height="12">
-        <use href="./images/spirite.svg#icon-envelope"></use>
-       </svg>
-       info@devstudio.com</a
-      >
-     </li>
-     <li class="header-contacts__list">
-      <a class="header-contacts__link" href="tel:+380961111111">
-       <svg class="header-contacts__icon header-contacts__icon-indent-right" width="10" height="16">
-        <use href="./images/spirite.svg#icon-smartphone"></use>
-       </svg>
-       +38 096 111 11 11</a
-      >
-     </li>
-    </ul>
+    <button type="button" class="mobile-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+     <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+      <use class="mobile-menu__open" href="./images/spirite.svg#icon-menu"></use>
+      <use class="mobile-menu__close" href="./images/spirite.svg#icon-close-menu"></use>
+     </svg>
+    </button>
+    <div class="header-mobile is-open" data-menu>
+     <ul class="header-nav__list">
+      <li class="header-nav__item">
+       <a class="header-nav__link" href="./index.html">Студія</a>
+      </li>
+      <li class="header-nav__item">
+       <a class="header-nav__link header-nav__link--is-active" href="./portfolio.html">Портфоліо</a>
+      </li>
+      <li class="header-nav__item">
+       <a class="header-nav__link" href="">Контакти</a>
+      </li>
+     </ul>
+
+     <ul class="header-contacts header-contacts__indent-left">
+      <li class="header-contacts__list">
+       <a class="header-contacts__link header-contacts__link--email" href="mailto:info@devstudio.com">
+        <svg class="header-contacts__icon header-contacts__icon-indent-right" width="16" height="12">
+         <use href="./images/spirite.svg#icon-envelope"></use>
+        </svg>
+        info@devstudio.com</a
+       >
+      </li>
+      <li class="header-contacts__list">
+       <a class="header-contacts__link header-contacts__link--tel" href="tel:+380961111111">
+        <svg class="header-contacts__icon header-contacts__icon-indent-right" width="10" height="16">
+         <use href="./images/spirite.svg#icon-smartphone"></use>
+        </svg>
+        +38 096 111 11 11</a
+       >
+      </li>
+     </ul>
+
+     <ul class="mobile__social-list">
+      <li class="mobile__social-item">
+       <a href="" class="mobile__social-link">Instagram</a>
+      </li>
+      <li class="mobile__social-item"><a href="" class="mobile__social-link">Twitter</a></li>
+      <li class="mobile__social-item"><a href="" class="mobile__social-link">Facebook</a></li>
+      <li class="mobile__social-item"><a href="" class="mobile__social-link">LinkedIn</a></li>
+     </ul>
+    </div>
    </nav>
   </header>
 
@@ -83,7 +101,21 @@
       <li class="product__item">
        <a class="product__link" href="">
         <div class="product__thumb">
-         <img src="./images/pf-1.jpg" alt="Технокряк" width="370" />
+         <img
+          class="projects__image"
+          srcset="
+           ./images/projects-img/technokryak480.jpg     450w,
+           ./images/projects-img/technokryak480@2x.jpg  900w,
+           ./images/projects-img/technokryak768.jpg     354w,
+           ./images/projects-img/technokryak768@2x.jpg  708w,
+           ./images/projects-img/technokryak1200.jpg    370w,
+           ./images/projects-img/technokryak1200@2x.jpg 740w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+          src="./images/projects-img/technokryak480.jpg"
+          alt="веб-сайт проєкту технокряк"
+          loading="lazy"
+         />
          <div class="product__overlay">
           <p class="product__label">
            Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу
@@ -102,7 +134,21 @@
       <li class="product__item">
        <a class="product__link" href="">
         <div class="product__thumb">
-         <img src="./images/pf-2.jpg" alt="Постер New Orlean vs Golden Star" width="370" />
+         <img
+          class="projects__image"
+          srcset="
+           ./images/projects-img/poster480.jpg     450w,
+           ./images/projects-img/poster480@2x.jpg  900w,
+           ./images/projects-img/poster768.jpg     354w,
+           ./images/projects-img/poster768@2x.jpg  708w,
+           ./images/projects-img/poster1200.jpg    370w,
+           ./images/projects-img/poster1200@2x.jpg 740w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+          src="./images/projects-img/poster480.jpg"
+          alt="дизайн постеру нью орлеан"
+          loading="lazy"
+         />
          <div class="product__overlay">
           <p class="product__label">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
@@ -121,7 +167,21 @@
       <li class="product__item">
        <a class="product__link" href="">
         <div class="product__thumb">
-         <img src="./images/pf-3.jpg" alt="Ресторан Seafood" width="370" />
+         <img
+          class="projects__image"
+          srcset="
+           ./images/projects-img/restaurant480.jpg     450w,
+           ./images/projects-img/restaurant480@2x.jpg  900w,
+           ./images/projects-img/restaurant768.jpg     354w,
+           ./images/projects-img/restaurant768@2x.jpg  708w,
+           ./images/projects-img/restaurant1200.jpg    370w,
+           ./images/projects-img/restaurant1200@2x.jpg 740w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+          src="./images/projects-img/restaurant480.jpg"
+          alt="додаток ресторану сифуд"
+          loading="lazy"
+         />
          <div class="product__overlay">
           <p class="product__label">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
@@ -140,7 +200,21 @@
       <li class="product__item">
        <a class="product__link" href="">
         <div class="product__thumb">
-         <img src="./images/pf-4.jpg" alt="Проєкт Prime" width="370" />
+         <img
+          class="projects__image"
+          srcset="
+           ./images/projects-img/prime480.jpg     450w,
+           ./images/projects-img/prime480@2x.jpg  900w,
+           ./images/projects-img/prime768.jpg     354w,
+           ./images/projects-img/prime768@2x.jpg  708w,
+           ./images/projects-img/prime1200.jpg    370w,
+           ./images/projects-img/prime1200@2x.jpg 740w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+          src="./images/projects-img/prime480.jpg"
+          alt="маркетинг проєкту прайм"
+          loading="lazy"
+         />
          <div class="product__overlay">
           <p class="product__label">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
@@ -159,7 +233,21 @@
       <li class="product__item">
        <a class="product__link" href="">
         <div class="product__thumb">
-         <img src="./images/pf-5.jpg" alt="Проєкт Boxes" width="370" />
+         <img
+          class="projects__image"
+          srcset="
+           ./images/projects-img/boxes480.jpg     450w,
+           ./images/projects-img/boxes480@2x.jpg  900w,
+           ./images/projects-img/boxes768.jpg     354w,
+           ./images/projects-img/boxes768@2x.jpg  708w,
+           ./images/projects-img/boxes1200.jpg    370w,
+           ./images/projects-img/boxes1200@2x.jpg 740w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+          src="./images/projects-img/boxes480.jpg"
+          alt="маркетинг проєкту боксес"
+          loading="lazy"
+         />
          <div class="product__overlay">
           <p class="product__label">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
@@ -178,7 +266,21 @@
       <li class="product__item">
        <a class="product__link" href="">
         <div class="product__thumb">
-         <img src="./images/pf-6.jpg" alt="Inspiration has no Borders" width="370" />
+         <img
+          class="projects__image"
+          srcset="
+           ./images/projects-img/inspiration480.jpg     450w,
+           ./images/projects-img/inspiration480@2x.jpg  900w,
+           ./images/projects-img/inspiration768.jpg     354w,
+           ./images/projects-img/inspiration768@2x.jpg  708w,
+           ./images/projects-img/inspiration1200.jpg    370w,
+           ./images/projects-img/inspiration1200@2x.jpg 740w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+          src="./images/projects-img/inspiration480.jpg"
+          alt="веб-сайт проекту инспирейшн"
+          loading="lazy"
+         />
          <div class="product__overlay">
           <p class="product__label">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
@@ -197,7 +299,21 @@
       <li class="product__item">
        <a class="product__link" href="">
         <div class="product__thumb">
-         <img src="./images/pf-7.jpg" alt="Видання Limited Edition" width="370" />
+         <img
+          class="projects__image"
+          srcset="
+           ./images/projects-img/limited480.jpg     450w,
+           ./images/projects-img/limited480@2x.jpg  900w,
+           ./images/projects-img/limited768.jpg     354w,
+           ./images/projects-img/limited768@2x.jpg  708w,
+           ./images/projects-img/limited1200.jpg    370w,
+           ./images/projects-img/limited1200@2x.jpg 740w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+          src="./images/projects-img/limited480.jpg"
+          alt="дизайн видання лімітед едішн"
+          loading="lazy"
+         />
          <div class="product__overlay">
           <p class="product__label">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
@@ -216,7 +332,21 @@
       <li class="product__item">
        <a class="product__link" href="">
         <div class="product__thumb">
-         <img src="./images/pf-8.jpg" alt="проєкт LAB" width="370" />
+         <img
+          class="projects__image"
+          srcset="
+           ./images/projects-img/lab480.jpg     450w,
+           ./images/projects-img/lab480@2x.jpg  900w,
+           ./images/projects-img/lab768.jpg     354w,
+           ./images/projects-img/lab768@2x.jpg  708w,
+           ./images/projects-img/lab1200.jpg    370w,
+           ./images/projects-img/lab1200@2x.jpg 740w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+          src="./images/projects-img/lab480.jpg"
+          alt="маркетинг проєкту лаб"
+          loading="lazy"
+         />
          <div class="product__overlay">
           <p class="product__label">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
@@ -235,7 +365,21 @@
       <li class="product__item">
        <a class="product__link" href="">
         <div class="product__thumb">
-         <img src="./images/pf-9.jpg" alt="Growing Business" width="370" />
+         <img
+          class="projects__image"
+          srcset="
+           ./images/projects-img/growing480.jpg     450w,
+           ./images/projects-img/growing480@2x.jpg  900w,
+           ./images/projects-img/growing768.jpg     354w,
+           ./images/projects-img/growing768@2x.jpg  708w,
+           ./images/projects-img/growing1200.jpg    370w,
+           ./images/projects-img/growing1200@2x.jpg 740w
+          "
+          sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+          src="./images/projects-img/growing480.jpg"
+          alt="додаток проєкту гровінг бізнесес"
+          loading="lazy"
+         />
          <div class="product__overlay">
           <p class="product__label">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis in ut quis tenetur itaque rem libero,
@@ -257,69 +401,70 @@
 
   <footer class="footer">
    <div class="footer__box-main container">
-    <div class="footer__box-contacts">
-     <a class="logo logo--footer-color" href="./index.html"> <span class="logo--color">Web</span>Studio</a>
-     <address class="address address__indent-top">
-      <ul class="address__contacts">
-       <li class="address__list">
-        <a
-         class="address__map"
-         href="https://goo.gl/maps/aHd2ftM9WsuAnUvCA"
-         target="_blank"
-         rel="nofollow noreferrer noopener"
-         >м. Київ, пр-т Лесі Українки, 26</a
-        >
+    <div class="footer__contacts-socials">
+     <div class="footer__box-contacts">
+      <a class="logo logo--footer-color" href="./index.html"> <span class="logo--color">Web</span>Studio</a>
+      <address class="address address__indent-top">
+       <ul class="address__contacts">
+        <li class="address__list">
+         <a
+          class="address__map"
+          href="https://goo.gl/maps/aHd2ftM9WsuAnUvCA"
+          target="_blank"
+          rel="nofollow noreferrer noopener"
+          >м. Київ, пр-т Лесі Українки, 26</a
+         >
+        </li>
+        <li class="address__list">
+         <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="address__list">
+         <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+       </ul>
+      </address>
+     </div>
+
+     <div class="social-box">
+      <p class="footer-title-box footer-title-box__indent-bottom">приєднуйтесь</p>
+      <ul class="social__list">
+       <li class="social__item">
+        <a class="social__link" href="#">
+         <svg class="social__logo" width="20" height="20">
+          <use href="./images/spirite.svg#icon-instagram"></use>
+         </svg>
+        </a>
        </li>
-       <li class="address__list">
-        <a class="address__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+       <li class="social__item">
+        <a class="social__link" href="#">
+         <svg class="social__logo" width="20" height="20">
+          <use href="./images/spirite.svg#icon-twitter"></use>
+         </svg>
+        </a>
        </li>
-       <li class="address__list">
-        <a class="address__link" href="tel:+380961111111">+38 096 111 11 11</a>
+       <li class="social__item">
+        <a class="social__link" href="#">
+         <svg class="social__logo" width="20" height="20">
+          <use href="./images/spirite.svg#icon-facebook"></use>
+         </svg>
+        </a>
+       </li>
+       <li class="social__item">
+        <a class="social__link" href="#">
+         <svg class="social__logo" width="20" height="20">
+          <use href="./images/spirite.svg#icon-linkedin"></use>
+         </svg>
+        </a>
        </li>
       </ul>
-     </address>
-    </div>
-
-    <div class="social-box">
-     <p class="footer-title-box footer-title-box__indent-bottom">приєднуйтесь</p>
-     <ul class="social__list">
-      <li class="social__item">
-       <a class="social__link" href="#">
-        <svg class="social__logo" width="20" height="20">
-         <use href="./images/spirite.svg#icon-instagram"></use>
-        </svg>
-       </a>
-      </li>
-
-      <li class="social__item">
-       <a class="social__link" href="#">
-        <svg class="social__logo" width="20" height="20">
-         <use href="./images/spirite.svg#icon-twitter"></use>
-        </svg>
-       </a>
-      </li>
-      <li class="social__item">
-       <a class="social__link" href="#">
-        <svg class="social__logo" width="20" height="20">
-         <use href="./images/spirite.svg#icon-facebook"></use>
-        </svg>
-       </a>
-      </li>
-      <li class="social__item">
-       <a class="social__link" href="#">
-        <svg class="social__logo" width="20" height="20">
-         <use href="./images/spirite.svg#icon-linkedin"></use>
-        </svg>
-       </a>
-      </li>
-     </ul>
+     </div>
     </div>
 
     <div class="subscrib-box">
      <p class="footer-title-box footer-title-box__indent-bottom">Підпишіться на розсилку</p>
      <form class="subscrib-form">
-      <input class="subscrib-form__email" autocomplete="email" type="email" id="email" placeholder=" " />
-      <label class="subscrib-form__label" for="email">E-mail</label>
+      <input class="subscrib-form__email" autocomplete="email" type="email" id="email" placeholder="E-mail " />
 
       <button class="main-button subscrib-form__button" type="submit">
        Підписатися
@@ -332,5 +477,6 @@
     </div>
    </div>
   </footer>
+  <script src="./js/menu-mobile.js"></script>
  </body>
 </html>
