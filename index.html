@@ -38,7 +38,7 @@
 
     <ul class="header-contacts header-contacts__indent-left">
      <li class="header-contacts__list">
-      <a class="header-contacts__link" href="mailto:info@devstudio.com">
+      <a class="header-contacts__link header-contacts__link--email" href="mailto:info@devstudio.com">
        <svg class="header-contacts__icon header-contacts__icon-indent-right" width="16" height="12">
         <use href="./images/spirite.svg#icon-envelope"></use>
        </svg>
@@ -46,7 +46,7 @@
       >
      </li>
      <li class="header-contacts__list">
-      <a class="header-contacts__link" href="tel:+380961111111">
+      <a class="header-contacts__link header-contacts__link--tel" href="tel:+380961111111">
        <svg class="header-contacts__icon header-contacts__icon-indent-right" width="10" height="16">
         <use href="./images/spirite.svg#icon-smartphone"></use>
        </svg>
@@ -351,8 +351,8 @@
 
   <footer class="footer">
    <div class="footer__box-main container">
-    <div class="footer__box-contacts">
-     <div class="test">
+    <div class="footer__contacts-socials">
+     <div class="footer__box-contacts">
       <a class="logo logo--footer-color" href="./index.html"> <span class="logo--color">Web</span>Studio</a>
       <address class="address address__indent-top">
        <ul class="address__contacts">
@@ -374,6 +374,7 @@
        </ul>
       </address>
      </div>
+
      <div class="social-box">
       <p class="footer-title-box footer-title-box__indent-bottom">приєднуйтесь</p>
       <ul class="social__list">
@@ -414,7 +415,6 @@
      <p class="footer-title-box footer-title-box__indent-bottom">Підпишіться на розсилку</p>
      <form class="subscrib-form">
       <input class="subscrib-form__email" autocomplete="email" type="email" id="email" placeholder="E-mail " />
-      <!-- <label class="subscrib-form__label" for="email">E-mail</label> -->
 
       <button class="main-button subscrib-form__button" type="submit">
        Підписатися

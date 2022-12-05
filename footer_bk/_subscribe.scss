@@ -3,8 +3,7 @@
 /* ------------------------------ */
 
 .subscrib-box {
-text-align: center; //mobile    
-    display: block;
+
 @media screen and (max-width: 1199px) {
     text-align: center; //mobile    
     display: block;
@@ -12,15 +11,15 @@ text-align: center; //mobile
 
 }
 
-.subscrib-form {
-    // position: relative;
-    margin-top: 20px;
-    margin-right: auto;
+// .subscrib-form {
+//     position: relative;
+//     margin-top: 20px;
+//     margin-right: auto;
 
-    @media screen and (min-width: 1199px) {
-        display: flex;
-    }
-}
+//     @media screen and (min-width: 1199px) {
+//         display: flex;
+//     }
+// }
 
 .subscrib-form__email {
     padding-left: 15px;
@@ -53,42 +52,29 @@ text-align: center; //mobile
 
 
 
-.subscrib-form__label {
-    position: absolute;
+// .subscrib-form__button {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 0;
+//     padding: 10px 28px;
 
-    top: 50%;
-    left: 40px;
-    transform: translate(-50%, -50%);
+//     @media screen and (max-width: 1199px) {
+//             margin: 0 auto; //mobile
+//         }
+// }
 
-    font-size: 16px;
-    line-height: 1.25;
+// .subscrib-form__button:hover,
+// .subscrib-form__button:focus {
+//     background-color: var(--hover-button);
+// }
 
-    color: var(--secondary-color);
+// .subscrib-form__icon {
+//     fill: currentColor;
+//     margin-left: 10px;
+// }
 
 
-}
-
-.subscrib-form__button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 10px 28px;
-
-    @media screen and (max-width: 1199px) {
-            margin: 0 auto; //mobile
-        }
-}
-
-.subscrib-form__button:hover,
-.subscrib-form__button:focus {
-    background-color: var(--hover-button);
-}
-
-.subscrib-form__icon {
-    fill: currentColor;
-    margin-left: 10px;
-}
 
 /* .subscrib-email:not(:placeholder-shown):required:invalid + .subscrib-label {
  opacity: 0;
@@ -100,4 +86,19 @@ text-align: center; //mobile
 
 // .subscrib-form__email:not(:placeholder-shown)+.subscrib-label {
 //     opacity: 0;
+// }
+
+// .subscrib-form__label {
+//     position: absolute;
+
+//     top: 50%;
+//     left: 40px;
+//     transform: translate(-50%, -50%);
+
+//     font-size: 16px;
+//     line-height: 1.25;
+
+//     color: var(--secondary-color);
+
+
 // }

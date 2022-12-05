@@ -1,7 +1,12 @@
 .address__indent-top {
     margin-top: 20px;
+
+@media screen and (max-width: 767) {
     margin-bottom: 60px;
-    margin-right: auto;
+        margin-right: auto;
+}
+
+   
 }
 
 .address__list:not(:last-child) {
