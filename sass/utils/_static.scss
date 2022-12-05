@@ -6,18 +6,19 @@ body {
     font-size: var(--primary-font-size);
 }
 
+.header-nav.container {
+    @media screen and (max-width: 767px) {
 
+        margin: 0 auto 0 15px;
+
+    }
+}
 
 .container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 
-// @media screen and (max-width: 479px) {
-
-//         margin-left: 15px;
-//         margin-right: auto;
-//     }
 
 @media screen and (min-width: 480px) {
 
@@ -33,6 +34,8 @@ width: 768px;
 width: 1200px;
 }
 }
+
+
 
 .primary-indent {
     margin: 0 auto;

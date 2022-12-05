@@ -53,6 +53,12 @@ body {
   font-size: var(--primary-font-size);
 }
 
+@media screen and (max-width: 767px) {
+  .header-nav.container {
+    margin: 0 auto 0 15px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
