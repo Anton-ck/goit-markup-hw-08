@@ -68,11 +68,11 @@ align-items: center;
                 flex-direction: column;
                 margin-top: 24px;
                 margin-left: 40px;
-                margin-bottom: 30%;
-
-             
+                margin-bottom: 30%;   
             }
- 
+                  @media screen and (max-width: 479px) {
+                margin-bottom: 5%;
+                  }
 }
 
 
@@ -101,6 +101,18 @@ align-items: center;
         line-height: 1.18;
         letter-spacing: 0.02em;
     }
+
+                @media screen and (max-width: 479px) {
+                    padding: 16px 0;
+                    font-size: 30px;
+                    line-height: 1.18;
+                    letter-spacing: 0.02em;
+                }
+
+                    @media screen and (max-width: 479px) {
+                    padding: 15px 0;
+                  
+                }
 }
 
 .header-nav__link:focus,
@@ -142,6 +154,8 @@ align-items: center;
                 flex-direction: column-reverse;
                  margin-left: 40px;
                 }
+
+       
 }
 
 
@@ -209,9 +223,10 @@ align-items: center;
                     font-size: 34px;
                     line-height: 1.18;
                     color: var(--hover-link-color);
-
-
-                }
+}
+                 @media screen and (max-width: 479px) {
+                   font-size: 24px;
+                 }
 }
 .header-contacts__link:hover,
 .header-contacts__link:focus {

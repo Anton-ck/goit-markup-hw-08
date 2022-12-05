@@ -286,6 +286,11 @@ body {
     margin-bottom: 30%;
   }
 }
+@media screen and (max-width: 479px) {
+  .header-nav__list {
+    margin-bottom: 5%;
+  }
+}
 
 .header-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -308,6 +313,19 @@ body {
     font-size: 40px;
     line-height: 1.18;
     letter-spacing: 0.02em;
+  }
+}
+@media screen and (max-width: 479px) {
+  .header-nav__link {
+    padding: 16px 0;
+    font-size: 30px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
+}
+@media screen and (max-width: 479px) {
+  .header-nav__link {
+    padding: 15px 0;
   }
 }
 
@@ -437,6 +455,11 @@ body {
     font-size: 34px;
     line-height: 1.18;
     color: var(--hover-link-color);
+  }
+}
+@media screen and (max-width: 479px) {
+  .header-contacts__link--tel {
+    font-size: 24px;
   }
 }
 
