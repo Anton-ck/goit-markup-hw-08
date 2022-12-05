@@ -3,10 +3,7 @@
 /* ------------------------------ */
 
 .order {
-    /* margin-top: 80px;  For fixed header*/
-    
-    
-    
+    /* margin-top: 80px;  For fixed header*/ 
     padding-top: 118px;
     padding-bottom: 118px;
     background-color: var(--gray);
@@ -25,9 +22,41 @@
     background-position: center;
     background-size: cover;
 
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/order-img.jpg);
-
-    @media screen and (min-width: 1199px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/order/phone.jpg');
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/order/phone@2x.jpg');
+        }
+    
+        @media screen and (min-width: 479px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/order/tablet.jpg');
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/order/tablet@2x.jpg');
+            }
+        }
+    
+        @media screen and (min-width: 767px) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../images/order/desktop.jpg');
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/order/desktop@2x.jpg');
+            }
+        }
+    
+        @media screen and (min-width: 1199px) {
         height: 600px;
         }
 }
