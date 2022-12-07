@@ -10,15 +10,13 @@
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 1;
 
     opacity: 1;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     overflow-y: scroll;
-
-
+    z-index: 10;
 }
 
 .modal-order.is-hidden {
@@ -47,11 +45,22 @@
 
     background-color: var(--thirdy-color);
 
-    @media screen and (max-width: 480px) {
-        width: 350px;
+    @media screen and (max-width: 1199px) {
+        // width: 350px;
         padding: 40px 10px;
-        top: 60%
+        // top: 60%;
+            width: 95%;
+                max-width: 450px;
+                height: 95%;
+                max-height: 609px;
+                overflow: scroll;
     }
+
+                @media screen and (max-width: 449px) {
+                 
+                    padding: 40px 1vmin;
+               
+                }
 }
 
 .modal-form__title {
@@ -79,6 +88,7 @@
 }
 
 .modal-form__label {
+    margin-left: 1em;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 14px;
@@ -87,16 +97,14 @@
 
     color: var(--secondary-color);
 
-        @media screen and (max-width: 480px) {
-                margin-left: 25px;
-            }
+
 }
 
 .modal-form__input {
     padding: 5px 42px;
     margin-left: auto;
     margin-right: auto;
-    width: 448px;
+    width: 95%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
 
@@ -105,7 +113,7 @@
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (max-width: 480px) {
-                width: 280px;
+                width: 95%;
             }
 }
 
@@ -114,16 +122,14 @@
 
     top: 50%;
     /* origin 38px*/
-    left: 12px;
+    left: 2em;
     /* transform: translateY(-50%); */
 
     fill: currentColor;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        @media screen and (max-width: 480px) {
-                left: 36px;
-            }
+
 }
 
 .modal-form__comment {
@@ -131,7 +137,7 @@
     margin-left: auto;
     margin-right: auto;
 
-    width: 448px;
+    width: 95%;
     height: 120px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -140,9 +146,7 @@
     resize: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        @media screen and (max-width: 480px) {
-                width: 280px;
-            }
+  
 }
 
 .modal-form__inputbox:focus-within .modal-form__input,
@@ -188,9 +192,8 @@
 
     color: var(--secondary-color);
 
-        @media screen and (max-width: 480px) {
-            font-size: 10px;
-                
+        @media screen and (max-width: 449px) {
+font-size: calc(.4em + 1.3vmin);
             }
 }
 
@@ -199,7 +202,8 @@
 
     width: 16px;
     height: 15px;
-    margin-right: 8px;
+    // margin-right: 8px;
+    margin-right: 0.2em;
 
     border: 2px solid var(--primary-color);
     border-radius: 4px;

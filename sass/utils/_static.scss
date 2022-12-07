@@ -6,6 +6,10 @@ body {
     font-size: var(--primary-font-size);
 }
 
+body.mobile-open {
+    overflow: hidden;
+}
+
 .header-nav.container {
     @media screen and (max-width: 767px) {
 

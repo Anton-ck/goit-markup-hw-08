@@ -22,16 +22,16 @@ display: flex;
    
     }
 
- .clients__item {
-    gap: 30px;
+//  .clients__item {
+//     gap: 30px;
     
-        @media screen and (min-width: 480px) {
-        &:nth-child(2n + 1) {} 
+//         @media screen and (min-width: 480px) {
+//         &:nth-child(2n + 1) {} 
      
-    }
+//     }
 
             
-}
+// }
 .clients__link {
     display: flex;
     width: 210px;
