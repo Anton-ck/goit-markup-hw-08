@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
          /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
          var modalId = this.getAttribute('data-modal'),
-             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+             modalElem = document.querySelector('.modal-order__area[data-modal="' + modalId + '"]');
 
 
          /* После того как нашли нужное модальное окно, добавим классы
             подложке и окну чтобы показать их. */
-         modalElem.classList.add('is-hidden');
-         overlay.classList.add('is-hidden');
+         modalElem.classList.add('active');
+         overlay.classList.add('active');
       }); // end click
 
    }); // end foreach
@@ -39,29 +39,29 @@ document.addEventListener('DOMContentLoaded', function() {
    closeButtons.forEach(function(item){
 
       item.addEventListener('click', function(e) {
-         var parentModal = this.closest('.modal');
+         var parentModal = this.closest('.modal-order__area');
 
-         parentModal.classList.remove('is-hidden');
-         overlay.classList.remove('is-hidden');
+         parentModal.classList.remove('active');
+         overlay.classList.remove('active');
       });
 
    }); // end foreach
 
 
-    document.body.addEventListener('keyup', function (e) {
+      document.body.addEventListener('keyup', function (e) {
         var key = e.keyCode;
 
         if (key == 27) {
 
-            document.querySelector('.modal.is-hidden').classList.remove('is-hidden');
-            document.querySelector('.overlay').classList.remove('is-hidden');
+            document.querySelector('.modal-order__area.is-hidden').classList.add('is-hidden');
+            document.querySelector('.modal-order').classList.add('is-hidden');
         };
     }, false);
 
 
     overlay.addEventListener('click', function() {
-        document.querySelector('.modal.is-hidden').classList.remove('is-hidden');
-        this.classList.remove('is-hidden');
+        document.querySelector('.modal-order__area.active').classList.remove('active');
+        this.classList.remove('active');
     });
 
 

@@ -43,11 +43,12 @@
 
 .footer__contacts-socials {
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
         display: flex;
-        margin-left: 76px;
-        margin-right: auto;
-        margin-bottom: 60px;
+        align-items: baseline;
+        // margin-left: 76px;
+        // margin-right: auto;
+        justify-content: space-around;
     }
 
     @media screen and (min-width: 1199px) {
@@ -61,12 +62,17 @@
 }
 
 .footer__box-contacts {
-    // align-items: baseline;
-    @media screen and (max-width: 1199px) {
+
+    @media screen and (max-width: 767px) {
             text-align: center;
             margin-bottom: 60px; //mobile
         }
 
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+            // margin-bottom: 60px; //mobile
+        }
+  
 
         @media screen and (min-width: 1199px) {
             margin-right: 70px;

@@ -79,7 +79,10 @@
    <section class="order order__overlay order__overlay-indent-right-left">
     <div class="container">
      <h1 class="order__title order__title-indent">Ефективні рішення для вашого бізнесу</h1>
-     <button class="order-button main-button primary-indent" type="button" data-modal-open>Замовити послугу</button>
+     <button class="order-button main-button primary-indent" type="button" data-modal-open>
+      Замовити послугу
+      <!-- <button class="order-button main-button primary-indent js-open-modal" type="button" data-modal="1"> -->
+     </button>
     </div>
    </section>
 
@@ -528,58 +531,61 @@
   </footer>
 
   <div class="modal-order is-hidden" data-modal>
+   <!-- <div class="modal-order overlay js-overlay-modal"> -->
    <div class="modal-order__area">
-    <form class="modal-form" autocomplete="off">
-     <p class="modal-form__title">Залиште свої дані, ми вам передзвонимо</p>
+    <div class="modal-order__area" data-modal="1">
+     <form class="modal-form" autocomplete="off">
+      <p class="modal-form__title">Залиште свої дані, ми вам передзвонимо</p>
 
-     <div class="modal-form__box">
-      <div class="modal-form__inputbox">
-       <label class="modal-form__label" for="firstname">Ім'я</label>
-       <input class="modal-form__input" type="text" id="firstname" />
-       <svg class="modal-form__icon" height="18" width="18">
-        <use href="./images/spirite.svg#icon-person-black"></use>
-       </svg>
+      <div class="modal-form__box">
+       <div class="modal-form__inputbox">
+        <label class="modal-form__label" for="firstname">Ім'я</label>
+        <input class="modal-form__input" type="text" id="firstname" />
+        <svg class="modal-form__icon" height="18" width="18">
+         <use href="./images/spirite.svg#icon-person-black"></use>
+        </svg>
+       </div>
+
+       <div class="modal-form__inputbox">
+        <label class="modal-form__label" for="tel">Телефон</label>
+        <input class="modal-form__input" type="tel" name="tel" id="tel" />
+        <svg class="modal-form__icon" height="18" width="18">
+         <use href="./images/spirite.svg#icon-tel"></use>
+        </svg>
+       </div>
+
+       <div class="modal-form__inputbox">
+        <label class="modal-form__label" for="email-modal">Пошта</label>
+        <input class="modal-form__input" type="email" name="email-modal" id="email-modal" />
+        <svg class="modal-form__icon" height="18" width="18">
+         <use href="./images/spirite.svg#icon-mail"></use>
+        </svg>
+       </div>
+
+       <div class="modal-form__inputbox">
+        <label class="modal-form__label" for="comment">Коментар</label>
+
+        <textarea class="modal-form__comment" placeholder="Введіть текст" name="comment" id="comment"></textarea>
+       </div>
       </div>
 
-      <div class="modal-form__inputbox">
-       <label class="modal-form__label" for="tel">Телефон</label>
-       <input class="modal-form__input" type="tel" name="tel" id="tel" />
-       <svg class="modal-form__icon" height="18" width="18">
-        <use href="./images/spirite.svg#icon-tel"></use>
-       </svg>
+      <div class="modal-form__agreebox">
+       <label class="modal-form__terms">
+        <input class="modal-form__check hidden" type="checkbox" />
+        <span class="modal-form__checkbox"></span>
+        Погоджуюся з розсилкою та приймаю <a class="modal-form__link" href="">Умови договору</a>
+       </label>
       </div>
 
-      <div class="modal-form__inputbox">
-       <label class="modal-form__label" for="email-modal">Пошта</label>
-       <input class="modal-form__input" type="email" name="email-modal" id="email-modal" />
-       <svg class="modal-form__icon" height="18" width="18">
-        <use href="./images/spirite.svg#icon-mail"></use>
-       </svg>
-      </div>
-
-      <div class="modal-form__inputbox">
-       <label class="modal-form__label" for="comment">Коментар</label>
-
-       <textarea class="modal-form__comment" placeholder="Введіть текст" name="comment" id="comment"></textarea>
-      </div>
-     </div>
-
-     <div class="modal-form__agreebox">
-      <label class="modal-form__terms">
-       <input class="modal-form__check hidden" type="checkbox" />
-       <span class="modal-form__checkbox"></span>
-       Погоджуюся з розсилкою та приймаю <a class="modal-form__link" href="">Умови договору</a>
-      </label>
-     </div>
-
-     <button class="main-button modal-form__button" type="submit">Відправити</button>
-    </form>
-    <button class="modal-form__close" data-modal-close>
-     <!---->
-     <svg class="modal-form__close-icon" width="18" height="18">
-      <use href="./images/spirite.svg#icon-modal-close"></use>
-     </svg>
-    </button>
+      <button class="main-button modal-form__button" type="submit">Відправити</button>
+     </form>
+     <button class="modal-form__close" data-modal-close>
+      <svg class="modal-form__close-icon" width="18" height="18">
+       <!-- <svg class="modal__cross js-modal-close" width="18" height="18"> -->
+       <use href="./images/spirite.svg#icon-modal-close"></use>
+      </svg>
+     </button>
+    </div>
    </div>
   </div>
   <script src="./js/modal.js"></script>

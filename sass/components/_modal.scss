@@ -16,7 +16,6 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     overflow-y: scroll;
-    z-index: 10;
 }
 
 .modal-order.is-hidden {
@@ -45,6 +44,8 @@
 
     background-color: var(--thirdy-color);
 
+        z-index: 40;
+
     @media screen and (max-width: 1199px) {
         // width: 350px;
         padding: 40px 10px;
@@ -62,6 +63,11 @@
                
                 }
 }
+
+
+
+
+
 
 .modal-form__title {
     margin-bottom: 12px;
@@ -269,3 +275,7 @@ font-size: calc(.4em + 1.3vmin);
 
     border-color: transparent;
 }
+
+
+
+
